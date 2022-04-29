@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
    body {
     box-sizing: border-box;
-    color: #5a0715;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -18,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   a:hover,
   a:focus {
-    color: red;
+    color: #272626;
   }
   /* Забрали маркери в списках */
   ul {

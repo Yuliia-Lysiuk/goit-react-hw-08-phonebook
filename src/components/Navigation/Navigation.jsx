@@ -1,9 +1,9 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { AiTwotoneHome } from 'react-icons/ai';
 import { RiLoginBoxFill } from 'react-icons/ri';
 import { GoSignIn } from 'react-icons/go';
 import { ImAddressBook } from 'react-icons/im';
-import { MainNav, NavItem, NavList } from "./Navigation.styled";
+import { MainNav, NavItem, NavList, NavLinks, NavTitle } from "./Navigation.styled";
 
 
 export function Navigation() {
@@ -12,35 +12,38 @@ export function Navigation() {
             <MainNav>
                 < NavList>
                     <NavItem>
-                        <NavLink to="/">
+                        <NavLinks to="/">
                             <AiTwotoneHome />
-                            Home
-                        </NavLink>
+                            <NavTitle>Home</NavTitle>
+                        </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLink to="/contacts">
-                            <ImAddressBook/>
-                            Contacts
-                        </NavLink>
+                        <NavLinks to="/contacts">
+                            <ImAddressBook />
+                            <NavTitle>Contacts</NavTitle>
+                        </NavLinks>
                     </NavItem>
                 </ NavList>
                 <NavList>
                     <NavItem>
-                        <NavLink to="/register">
+                        <NavLinks to="/register">
                             <RiLoginBoxFill />
-                            Log In
-                        </NavLink>
-                   </NavItem>
+                            <NavTitle>Log In</NavTitle>
+                        </NavLinks>
+                    </NavItem>
                     <NavItem>
-                        <NavLink to="/login">
+                        <NavLinks to="/login">
                             <GoSignIn />
-                            Sig Up
-                        </NavLink>
-                   </NavItem> 
-            
+                            <NavTitle>Sig Up</NavTitle>
+                        </NavLinks>
+                    </NavItem>
+
                 </NavList>
             </MainNav>
         </header>
-        <Outlet/>
+        <main>
+            <Outlet/>
+        </main>
+        
     </>)
 }

@@ -1,3 +1,4 @@
+import { ContactsPage } from "page/ContactsPage/ContactsPage";
 import { HomePage } from "page/HomePage/HomePage";
 import { LoginPage } from "page/LoginPage/LoginPage";
 import { RegisterPage } from "page/RegisterPage/RegisterPage";
@@ -9,6 +10,7 @@ export const App = () => {
     <Routes>
        <Route path="/" element={<Navigation />} >
           <Route index element={<HomePage />} />
+          <Route path="contacts" element={<ContactsPage />} />
           <Route path="register" element={<RegisterPage />} />
           <Route path="login" element={<LoginPage />} />
        </Route>
