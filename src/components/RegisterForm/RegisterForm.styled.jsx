@@ -7,6 +7,7 @@ export const ButtonSubmit = styled(Button)`
   background-color: #856c6c;
   padding: 15px 40px;
   box-shadow: inset 0px -8px 10px 0px #bd9797;
+  display: inline-block;
   &:hover{
     background-color: #e28787;
     transform: scale(1.1)

@@ -1,6 +1,6 @@
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import {  Form, Links, Title, TitleForm, TitleLink } from './RegisterForm.styled';
+// import Button from '@mui/material/Button';
+import {  Form, Links, Title, TitleForm, TitleLink , ButtonSubmit} from './RegisterForm.styled';
 import { useState } from 'react';
 import {  useDispatch, useSelector } from 'react-redux';
 import { register } from 'redux/auth/authOperation';
@@ -93,7 +93,7 @@ function handleSubmit(e) {
               name="password"
               helperText={passwordError}
               required/>
-            <Button  style={{ backgroundColor: '#d8bdc4ac', }} variant="contained" type="submit" disabled={onDisabled}>Create account</Button>
+            <ButtonSubmit style={{ backgroundColor: '#d8bdc4ac', }} variant="contained" type="submit" disabled={onDisabled}>Create account</ButtonSubmit>
         </Form>
         <TitleLink themeColor={themes}>
             Already have an account? <Links to="/login">Log in</Links>
