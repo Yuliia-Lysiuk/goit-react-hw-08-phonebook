@@ -37,17 +37,24 @@ export const NameInput = styled.input`
 `
 
 export const Button = styled.button`
-/* font-size: 16px; */
+    display: flex;
+    border-radius: 10px;   
+    font-size: 18px;
+    background-color:#665050;
+    box-shadow: 0px 0px 2px 2px #333333ae;
+    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-    padding: 2px; 
-    border: none;
-    background-color: inherit;
+    padding: 5px; 
+    
     
     :hover{
         color: #470c3aaf;
+        box-shadow: 0px 0px 2px 2px #470c3aaf;
         cursor: pointer;
-        transform: scale(1.2);
+        transform: scale(1.1);
+        background-color:#8d7777;
+        border:2px solid black;
     }
     
 `

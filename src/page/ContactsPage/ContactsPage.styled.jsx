@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
-export const Box = styled.div`
-min-height: 100vh;
-background-color: ${props => props.themeColor ? "#e2d7d7" : "#2e2a2a"};
-padding: 20px;
-`
+
 export const Text = styled.p`
     text-align: center;
     font-size: 20px;
@@ -14,6 +10,7 @@ export const Text = styled.p`
 export const ButtonTheme = styled.button`
     background-color:#856c6c;
     padding:10px;
+    border-radius: 10px; 
     /* border:none; */
     box-shadow: 2px 2px 10px 1px #857579ae;
     cursor: pointer;
@@ -21,9 +18,9 @@ export const ButtonTheme = styled.button`
 
 export const Phonebook = styled.div`
 
-margin: auto ;
+/* margin: auto ; */
     background-color: #856c6c;
-    width: 30%;
+    /* width: 30%; */
     padding: 20px;
     border: 2px solid #e0d4d4;
     box-shadow: 8px 8px 20px 1px #857579ae;

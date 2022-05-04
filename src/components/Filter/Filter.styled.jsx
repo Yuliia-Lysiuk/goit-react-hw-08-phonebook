@@ -25,5 +25,13 @@ display: flex;
 export const FilterBox = styled.div`
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
+    
+`
+
+export const Label = styled.label`
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     
 `

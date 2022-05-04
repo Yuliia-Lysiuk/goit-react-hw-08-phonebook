@@ -1,6 +1,6 @@
 import { LoginForm } from "components/LoginForm/LoginForm";
 
-export function LoginPage() {
+export default function LoginPage() {
     return (<>
     <LoginForm/>
     </>)

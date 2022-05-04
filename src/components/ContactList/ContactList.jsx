@@ -26,7 +26,7 @@ export function ContactList({normalizedFilter}) {
                                     <Contact>
                                         <ContactName>{name}: </ContactName>
                                         <Dots></Dots>
-                                    <p>{number}</p>
+                                    <a href={`tel:${number}`}>{number}</a >
                                     </Contact>
                                     <Button type="button" onClick={()=>deleteContacts(id)}>
                                         <RiDeleteBin6Line style={{ width: 20, height: 20,   }} />

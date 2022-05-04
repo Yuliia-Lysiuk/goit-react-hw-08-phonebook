@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Button, Form, Input, Label, NameInput } from "./ContactForm.styled";
+import { Button, Form, Input, Label, NameInput} from "./ContactForm.styled";
 import { TiUserAdd } from 'react-icons/ti';
 import { useCreateContactsMutation, useFetchContactsQuery } from 'redux/contacts/contactsSlice';
 
@@ -54,7 +54,8 @@ export function ContactForm() {
               name="name"
               pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
               title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-              required
+            required
+            placeholder='Angela Wolf'
             />
           </Label>
           <Label>
@@ -66,11 +67,15 @@ export function ContactForm() {
               name="number"
               pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-              required
+            required
+            placeholder='236-634-3355'
             />
         </Label>
         <Button type="submit" disabled={isLoading}>
-          <TiUserAdd style={{ width: 25, height: 25,   }} />
+          Add contact 
+            <TiUserAdd style={{ width: 20, height: 20,  marginLeft: '8px' }} /> 
+         
+          
           </Button>
         </Form>
       

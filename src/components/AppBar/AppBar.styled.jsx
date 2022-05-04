@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { NavLink } from "react-router-dom";
 
+
 export const MainNav = styled.nav`
   display:flex;
   justify-content: space-between;
   background-color: #856c6c;
-  padding: 15px 40px;
+  padding: 10px 40px;
   /* border-bottom: solid 2px #885965ac; */
   box-shadow: inset 0px -8px 10px 0px #bd9797;
 `
@@ -36,3 +37,4 @@ export const NavTitle = styled.span`
  margin-left: 3px;
  
 `
+

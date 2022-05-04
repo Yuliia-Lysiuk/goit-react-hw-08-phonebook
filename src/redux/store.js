@@ -1,6 +1,7 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { contactsApi } from './contacts/contactsSlice';
+import { authSlice } from './auth/authSlice';
 import {
   persistStore,
   persistReducer,
@@ -16,6 +17,12 @@ import storage from 'redux-persist/lib/storage';
 const persistConfig = {
   key: 'theme',
   storage: storage,
+};
+
+const persistorConfig = {
+  key: 'auth',
+  storage: storage,
+  whitelist: ['token'],
 };
 
 const contactsSlice = createSlice({
@@ -48,9 +55,11 @@ const themeSlice = createSlice({
 });
 
 const persistedReducer = persistReducer(persistConfig, themeSlice.reducer);
+const persistedsReducer = persistReducer(persistorConfig, authSlice.reducer);
 
 export const store = configureStore({
   reducer: {
+    auth: persistedsReducer,
     contacts: contactsSlice.reducer,
     theme: persistedReducer,
     [contactsApi.reducerPath]: contactsApi.reducer,
