@@ -13,7 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter>
+        <BrowserRouter basename="/goit-react-hw-08-phonebook/">
           <GlobalStyle />
           <App />
         </BrowserRouter>
@@ -23,7 +23,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-//  <BrowserRouter basename="/goit-react-hw-08-phonebook/">
+//
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
