@@ -19,7 +19,7 @@ export function ContactList({normalizedFilter}) {
                 (
                     <Text>Nothing found</Text>
             
-                ) : (
+                ) : (<>
                    <List>
                             {visibleContacts.map(({ id, name, number }) => 
                                 <Item key={id}>
@@ -33,7 +33,8 @@ export function ContactList({normalizedFilter}) {
                                     </Button>
                                 </Item>
                             )}
-                        </List >)
+                        </List >
+                   </> )
                    
             }
         </div>}

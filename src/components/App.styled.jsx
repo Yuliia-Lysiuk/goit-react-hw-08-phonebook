@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+@media only screen and (max-width: 480px)
+{
+  min-height: 450px;
+  padding: 30px;
+}
+min-height: 470px;
   background-color: "#aa6868";
   margin: 0 auto;
-padding: 15px; 
+padding: 25px; 
 display: flex;
 flex-direction: column;
 align-items: center;

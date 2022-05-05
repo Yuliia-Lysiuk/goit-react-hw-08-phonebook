@@ -4,7 +4,7 @@ import { RiLoginBoxFill } from 'react-icons/ri';
 import { GoSignIn } from 'react-icons/go';
 import { ImAddressBook } from 'react-icons/im';
 import { BsSunFill, BsMoonStarsFill } from 'react-icons/bs';
-import { MainNav, NavItem, NavList, NavLinks, NavTitle } from "./AppBar.styled";
+import { MainNav, NavItem, NavList, NavLinks, NavTitle, Header } from "./AppBar.styled";
 import { useDispatch, useSelector } from 'react-redux';
 import { changeTheme } from 'redux/store';
 import {  ButtonTheme } from "page/ContactsPage/ContactsPage.styled";
@@ -19,7 +19,7 @@ export function AppBar() {
     const themes = useSelector(state => state.theme.value);
 
     return ( <>
-        <header>
+        <Header>
             <MainNav>
                 < NavList>
                     <NavItem>
@@ -56,7 +56,7 @@ export function AppBar() {
                 }
             </MainNav>
             
-        </header>
+        </Header>
          <Outlet />
     </>)
 }

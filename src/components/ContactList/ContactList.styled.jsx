@@ -32,7 +32,11 @@ export const ContactName = styled.p`
     font-weight: 700;
 `
 
-export const Contact= styled.div`
+export const Contact = styled.div`
+@media only screen and (max-width: 480px)
+{
+  min-width: 200px;
+}
      display: flex;
     justify-content: space-between;
     align-items: center;

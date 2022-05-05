@@ -20,7 +20,7 @@ export const Phonebook = styled.div`
 
 /* margin: auto ; */
     background-color: #856c6c;
-    /* width: 30%; */
+
     padding: 20px;
     border: 2px solid #e0d4d4;
     box-shadow: 8px 8px 20px 1px #857579ae;

@@ -15,10 +15,9 @@ export const ButtonSubmit = styled(Button)`
 `
 export const Title = styled.h1`
    text-align: center;
-   font-size: 16px;
+   font-size: 18px;
    margin: 0;
    font-weight: 400;
-   width:400px;
    color: ${props => props.themeColor ? "#2e2a2a" : "#e2d7d7"};
 `
 
@@ -39,7 +38,6 @@ export const TitleLink = styled(Title)`
 `
 
 export const Form = styled.form`
-width: 35vh;
 margin: 20px auto ;
     background-color: #856c6c;
     padding: 20px;

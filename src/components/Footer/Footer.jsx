@@ -38,8 +38,8 @@ export function Footer() {
         <footer>
             <BoxFooter themeColor={themes}>
                <ContainerFooter>
-                    © 2022 | All Rights Reserved | Developed with <Heart /> by
-                    <Button onClick={handleOpen} sx={styleButton}> Julia Lusyk</Button>
+                    <p>© 2022 | Developed with <Heart /> </p>
+                    <Button onClick={handleOpen} sx={styleButton}>by Julia Lusyk</Button>
                     <Modal
                         open={open}
                         onClose={handleClose}

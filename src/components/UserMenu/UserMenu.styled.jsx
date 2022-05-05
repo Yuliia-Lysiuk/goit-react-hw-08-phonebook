@@ -25,6 +25,13 @@ export const ButtonOut = styled.button`
     }
 `
 export const Letter = styled.p`
+@media only screen and (max-width: 480px)
+{
+  font-size: 18px;
+    font-weight: 700;
+    width: 10px;
+    height:10px;
+}
     font-size: 24px;
     font-weight: 700;
     width: 20px;
@@ -35,4 +42,11 @@ export const Letter = styled.p`
     align-items:center;
     justify-content: center;
     
+`
+export const WelcomeBox = styled.div`
+    @media only screen and (max-width: 480px)
+{
+  display: none;
+}
+   display: block; 
 `

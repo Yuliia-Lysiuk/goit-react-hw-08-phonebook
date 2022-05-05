@@ -8,9 +8,17 @@ export const BoxFooter = styled.div`
   border-top: solid 2px #885965ac;
   
 `
-export const ContainerFooter = styled(Container)`
+export const ContainerFooter = styled.div`
+@media only screen and (max-width: 480px)
+{
+    padding:25px 5px;
+}
+  margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
   background-color: "#aa6868";
- 
+ padding: 15px;
 
 flex-direction: row;
 justify-content: center;
@@ -30,6 +38,11 @@ const heartBeatAnimation = keyframes`
 `
 
 export const Heart = styled(AiTwotoneHeart)`
+@media only screen and (max-width: 480px)
+{
+    margin-right: 4px;
+  margin-left: 4px;
+}
 margin-right: 10px;
   margin-left: 10px;
   border-radius: 10px;
