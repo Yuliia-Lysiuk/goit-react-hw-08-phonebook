@@ -17,7 +17,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
   background-color: "#aa6868";
- padding: 15px;
+ padding: 20px;
 
 flex-direction: row;
 justify-content: center;
