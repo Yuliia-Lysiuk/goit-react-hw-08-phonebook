@@ -11,15 +11,15 @@ export const Header = styled.header`
 export const MainNav = styled.nav`
 @media only screen and (max-width: 480px)
 {
-   padding: 25px 5px;
+   padding: 0 5px;
 }
 max-width: 900px;
 margin: auto;
   display:flex;
   justify-content: space-between;
-  padding: 20px 20px;
+  /* padding: 15px 20px; */
 align-items:center;
-  
+  height:10vh;
 `
 
 export const NavList = styled.ul`

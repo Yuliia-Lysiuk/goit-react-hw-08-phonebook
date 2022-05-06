@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 import girl from '../../img/Girl.jpg'
+import girlSpeak from '../../img/girlSpeak.jpg'
 
 export const Box = styled.div`
 @media only screen and (max-width: 1000px)
 {
-  min-width: 120px;
+    background-image: url(${girlSpeak});
+  /* min-width: 120px; */
 }
     background-image: url(${girl});
-    min-width: 1000px;
+    /* min-width: 1000px; */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,7 +18,7 @@ export const Box = styled.div`
 export const Title = styled.h1`
 @media only screen and (max-width: 480px)
 {
-   padding: 115px 5px 0;
+ 
     font-size: 14px;
 }
    text-align: center;
@@ -24,7 +26,7 @@ export const Title = styled.h1`
    margin: 0 auto;
    text-shadow: #f3c4c4 2px 0 2px;
    max-width: 800px;
-   padding:350px 0px 0 20px;
+   padding:340px 0px 0 20px;
    
 `
 

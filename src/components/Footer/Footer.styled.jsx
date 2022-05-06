@@ -5,22 +5,21 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 export const BoxFooter = styled.div`
   background-color: ${props => props.themeColor ? "#dfd1d1" : "#353232"};
   border-top: solid 2px #885965ac;
-  
+  height: 10vh;
+  display: flex;
+align-items: center;
 `
 export const ContainerFooter = styled.div`
 @media only screen and (max-width: 480px)
 {
-    padding:25px 5px;
+    /* padding:25px 5px; */
 }
-  margin: 0 auto;
+  margin: auto;
 display: flex;
-flex-direction: column;
 align-items: center;
   background-color: "#aa6868";
- padding: 20px;
+ /* padding: 15px; */
 
-flex-direction: row;
-justify-content: center;
 `
 
 const heartBeatAnimation = keyframes`  
