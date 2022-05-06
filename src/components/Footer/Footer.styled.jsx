@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 import {  AiTwotoneHeart } from 'react-icons/ai';
-import { Container } from 'components/App.styled';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export const BoxFooter = styled.div`

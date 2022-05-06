@@ -23,8 +23,8 @@ export const Title = styled.h1`
    font-size: 26px;
    margin: 0 auto;
    text-shadow: #f3c4c4 2px 0 2px;
-   max-width: 700px;
-   padding: 350px 0px 0 0px;
+   max-width: 800px;
+   padding:350px 0px 0 20px;
    
 `
 

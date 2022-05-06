@@ -6,7 +6,7 @@ export const Container = styled.div`
   min-height: 450px;
   padding: 30px;
 }
-min-height: 470px;
+min-height: 450px;
   background-color: "#aa6868";
   margin: 0 auto;
 padding: 25px; 

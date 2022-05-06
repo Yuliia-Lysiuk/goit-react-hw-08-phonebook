@@ -32,7 +32,7 @@ export const Links = styled(Link)`
 `
 
 export const Form = styled.form`
-/* width: 35vh; */
+
 margin: 20px auto ;
     background-color: #856c6c;
     padding: 20px;

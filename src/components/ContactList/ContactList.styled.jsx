@@ -16,8 +16,7 @@ font-size: 16px;
         color: #470c3aaf;
         cursor: pointer;
         transform: scale(1.2);
-        /* border: 2px solid black;
-        box-shadow: 1px 1px 4px 1px #470c3aaf; */
+     
     }
 `
 

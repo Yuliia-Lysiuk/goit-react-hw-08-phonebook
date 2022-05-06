@@ -11,7 +11,6 @@ export const ButtonTheme = styled.button`
     background-color:#856c6c;
     padding:10px;
     border-radius: 10px; 
-    /* border:none; */
     box-shadow: 2px 2px 10px 1px #857579ae;
     cursor: pointer;
 `
